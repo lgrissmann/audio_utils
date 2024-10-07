@@ -1,25 +1,33 @@
-# Conversor de Áudio M4A para MP3
+# Audio Utils
 
-**m4a2mp3** converte arquivos de áudio no formato `.m4a` para `.mp3` mantendo a mesma estrutura de diretórios. Ele também copia arquivos `.mp3` que já estão no formato correto para o diretório de saída e preserva as tags de metadados como Título, Artista, Álbum e Ano.
-
-## Funcionalidades
-
-- Converte arquivos `.m4a` para `.mp3` mantendo a qualidade de áudio.
-- Preserva as tags de metadados do arquivo original.
-- Copia arquivos `.mp3` existentes para o diretório de saída.
-- Mantém a mesma estrutura de diretórios do diretório de entrada.
+Coleção de ferramentas úteis na organização de arquivos de áudio.
 
 ## Pré-requisitos
 
 - Python 3.x
 - FFmpeg (para obter o bitrate dos arquivos)
 
-## Uso
-
-Execute o script passando os diretórios de entrada e saída como parâmetros da linha de comando:
+## m4a2mp3
 
     python m4a2mp3.py <diretorio_entrada> <diretorio_saida>
 
-Exemplo:
+- Converte arquivos `.m4a` para `.mp3` mantendo a qualidade de áudio.
+- Preserva as tags de metadados do arquivo original.
+- Copia arquivos `.mp3` existentes para o diretório de saída.
+- Mantém a mesma estrutura de diretórios do diretório de entrada.
 
-    python m4a2mp3.py /diretorio/de/musicas/mpa /diretorio/de/musicas/mp3
+
+## change_bitrate
+
+    python change_bitrate.py <diretorio_entrada> <bitrate>
+
+- Altera o bitrate do arquivo .mp3
+- Preserva as tags de metadados do arquivo original.
+- Sobrescreve o arquivo original com o novo arquivo.
+
+## compare_dir
+
+    python compare_dir.py <diretorio_1> <diretorio_2>
+
+- Compara os arquivos presentes em duas arvores de diretórios.
+- Ignora a extensão dos arquivos na comparação
