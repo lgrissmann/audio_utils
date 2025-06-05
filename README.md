@@ -10,7 +10,6 @@ Coleção de ferramentas úteis na organização de arquivos de áudio.
 ---
 ## m4a2mp3
 
-
 - Converte arquivos `.m4a` para `.mp3` mantendo a qualidade de áudio.
 - Preserva as tags de metadados do arquivo original.
 - Copia arquivos `.mp3` existentes para o diretório de saída.
@@ -64,3 +63,6 @@ Coleção de ferramentas úteis na organização de arquivos de áudio.
     ```bash
     python compare_dir.py /home/usuario/Music /tmp/Music_Converted
     ```
+
+
+10.6
